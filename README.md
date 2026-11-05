@@ -4,9 +4,9 @@
 
 | Field | Value |
 |---|---|
-| Name | _<your name>_ |
-| SRN | _<your SRN>_ |
-| Section | _<your section>_ |
+| Name | _<Jayant Mahishi>_ |
+| SRN | _<PES1UG24AM122>_ |
+| Section | _<AIML_B>_ |
 
 ## Problem Overview
 A continuous monitoring pipeline for post-operative patients that ingests vital telemetry (SpO2, Heart Rate, BP), detects threshold breaches, and escalates emergency alerts through a caregiver matrix.
