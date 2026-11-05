@@ -4,8 +4,8 @@
 
 | Field | Value |
 |---|---|
-| Name | _<Jayant Mahishi>_ |
-| SRN | _<PES1UG24AM122>_ |
+| Name | _Jayant Mahishi_ |
+| SRN | _PES1UG24AM122_ |
 | Section | _<AIML_B>_ |
 
 ## Problem Overview
