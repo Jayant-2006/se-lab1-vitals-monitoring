@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+
+actor "Remote Patient" as Patient
+actor "On-Call Caregiver" as Caregiver
+
+rectangle "Remote Patient Vitals Alert & Monitoring App" {
+  usecase "UC-01\nTransmit Vitals" as UC1
+  usecase "UC-02\nValidate Telemetry Data" as UC2
+  usecase "UC-03\nRaise Emergency Alert" as UC3
+  usecase "UC-04\nNotify Caregiver" as UC4
+  usecase "UC-05\nEscalate to Next Caregiver" as UC5
+  usecase "UC-06\nAcknowledge Alert" as UC6
+  usecase "UC-07\nView Live Vitals Dashboard" as UC7
+  usecase "UC-08\nConfigure Thresholds" as UC8
+}
+
+Patient --> UC1
+Patient --> UC3
+Patient --> UC7
+Caregiver --> UC6
+Caregiver --> UC7
+Caregiver --> UC8
+Caregiver --> UC5
+
+UC1 ..> UC2 : <<include>>
+UC3 ..> UC4 : <<include>>
+UC5 ..> UC3 : <<extend>>\n[no ack in 60 s]
+@enduml

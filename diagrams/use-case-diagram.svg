@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" font-family="Arial, Helvetica, sans-serif" font-size="13">
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker>
+<marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#333" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1000" height="660" fill="#fff"/>
+<rect x="190" y="20" width="620" height="620" fill="#fafafa" stroke="#333" stroke-width="2"/>
+<text x="500" y="45" text-anchor="middle" font-weight="bold" font-size="15">Remote Patient Vitals Alert &amp; Monitoring App</text>
+
+<!-- associations -->
+<g stroke="#333" stroke-width="1.3" fill="none">
+<line x1="120" y1="350" x2="246" y2="108"/>
+<line x1="120" y1="350" x2="405" y2="214"/>
+<line x1="120" y1="350" x2="230" y2="350"/>
+<line x1="880" y1="350" x2="596" y2="216"/>
+<line x1="880" y1="350" x2="793" y2="298"/>
+<line x1="880" y1="350" x2="698" y2="440"/>
+<line x1="880" y1="350" x2="698" y2="580"/>
+</g>
+<!-- include / extend -->
+<g stroke="#333" stroke-width="1.3" stroke-dasharray="6,4" fill="none">
+<line x1="440" y1="90" x2="578" y2="90" marker-end="url(#o)"/>
+<line x1="330" y1="382" x2="330" y2="438" marker-end="url(#o)"/>
+<line x1="525" y1="430" x2="410" y2="372" marker-end="url(#o)"/>
+</g>
+<text x="509" y="82" text-anchor="middle" font-style="italic">«include»</text>
+<text x="388" y="415" text-anchor="middle" font-style="italic">«include»</text>
+<text x="500" y="392" text-anchor="middle" font-style="italic">«extend»</text>
+<text x="500" y="407" text-anchor="middle" font-size="11">[no ack in 60 s]</text>
+
+<!-- use cases -->
+<g fill="#e8f1fb" stroke="#1f4e79" stroke-width="1.5">
+<ellipse cx="340" cy="90" rx="100" ry="34"/>
+<ellipse cx="680" cy="90" rx="100" ry="34"/>
+<ellipse cx="500" cy="200" rx="100" ry="34"/>
+<ellipse cx="700" cy="290" rx="100" ry="34"/>
+<ellipse cx="330" cy="350" rx="100" ry="34"/>
+<ellipse cx="330" cy="470" rx="100" ry="34"/>
+<ellipse cx="600" cy="450" rx="100" ry="34"/>
+<ellipse cx="600" cy="580" rx="100" ry="34"/>
+</g>
+<g text-anchor="middle">
+<text x="340" y="86">UC-01</text><text x="340" y="102">Transmit Vitals</text>
+<text x="680" y="86">UC-02 Validate</text><text x="680" y="102">Telemetry Data</text>
+<text x="500" y="196">UC-07 View Live</text><text x="500" y="212">Vitals Dashboard</text>
+<text x="700" y="286">UC-08 Configure</text><text x="700" y="302">Thresholds</text>
+<text x="330" y="346">UC-03 Raise</text><text x="330" y="362">Emergency Alert</text>
+<text x="330" y="466">UC-04 Notify</text><text x="330" y="482">Caregiver</text>
+<text x="600" y="446">UC-05 Escalate to</text><text x="600" y="462">Next Caregiver</text>
+<text x="600" y="576">UC-06</text><text x="600" y="592">Acknowledge Alert</text>
+</g>
+
+<!-- actors -->
+<g stroke="#333" stroke-width="2" fill="none">
+<circle cx="100" cy="310" r="14"/><line x1="100" y1="324" x2="100" y2="372"/><line x1="70" y1="340" x2="130" y2="340"/><line x1="100" y1="372" x2="76" y2="405"/><line x1="100" y1="372" x2="124" y2="405"/>
+<circle cx="900" cy="310" r="14"/><line x1="900" y1="324" x2="900" y2="372"/><line x1="870" y1="340" x2="930" y2="340"/><line x1="900" y1="372" x2="876" y2="405"/><line x1="900" y1="372" x2="924" y2="405"/>
+</g>
+<text x="100" y="428" text-anchor="middle" font-weight="bold">Remote Patient</text>
+<text x="900" y="428" text-anchor="middle" font-weight="bold">On-Call Caregiver</text>
+</svg>
